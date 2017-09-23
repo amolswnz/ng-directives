@@ -29,3 +29,5 @@ public/structuraldir/
 public/controller
 
 #### Directives and Services
+* Communication between single directive and service
+* Communication between 2 directives and services

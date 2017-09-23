@@ -1,0 +1,9 @@
+<div ng-repeat="user in users"
+  ng-click='selectUser(user)'
+  class ='text-right'
+  ng-class="{
+      'lead': user === selectedUser,
+      'text-danger': user !== selectedUser
+    }">
+  {{ user.name }} <hr>
+</div>

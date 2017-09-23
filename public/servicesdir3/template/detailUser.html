@@ -1,0 +1,10 @@
+<div class='panel panel-primary' ng-repeat='user in users' ng-show='user === selectedUser'>
+  <div class="panel-heading" ng-click='collapse()'>
+    {{user.name}}
+  </div>
+  <div class="panel-body">
+    <h4>Address</h4> Street: {{ user.address.street }}
+    <br>City: {{ user.address.city }}
+    <br>State: {{ user.address.state }}
+  </div>
+</div>
