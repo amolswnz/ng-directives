@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ng-directive</title>
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+ </head>
+<body ng-app="mainApp">
+    <div class="container-fluid" ng-controller='mainCtrl'>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>AngularJS - Directive in Depth</h1>
+            </div>
+        </div>
+    <hr>
+      <h4>Transclude function</h4>
+      <ul>
+        <li my-transclude ng-repeat='data in names'> {{ data }} </li>
+      </ul>
+    <hr>
+    <hr>
+      <h4>Lazy render control</h4>
+      <button type="button" class='btn btn-info' ng-hide='showit' ng-click="showit = true">Load data</button>
+      <ul>
+        <li lazy-load-data="showit" ng-repeat='data in hunters'> {{ data }} </li>
+      </ul>
+    <hr>
+    <hr>
+      <h4>ng-repat using Structural Directive</h4>
+      <div class="well" my-repeat='fruit in fruits'>
+        Fruit: {{fruit }}
+      </div>
+    <hr>
+    <button type="button" class='btn btn-success' ng-click='add()'>Add</button>
+    <button type="button" class='btn btn-danger' ng-click='remove()'>Remove</button>
+
+    <hr>
+      <h4>ng-repat using Structural Directive Practial Ex</h4>
+      <div fruit-list='fruit in moreFruits'>
+        <span>Number of boxes: {{ fruit.boxes }}</span>
+      </div>
+    <hr>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                &copy; 2016 - <a href="https://www.amol.co.nz" target="_blank">Amol Wankhede</a>
+            </div>
+        </div>
+    </div>
+<script src="../../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="../../bower_components/angular/angular.min.js" charset="utf-8"></script>
+<script src="app/app.js" charset="utf-8"></script>
+<!-- <script src="../../bower_components/angular-route/angular-route.min.js" charset="utf-8"></script> -->
+</body>
+</html>

@@ -13,3 +13,9 @@ public/directives/
 * Link function
 * Watching
 public/decorator/
+
+
+#### Transclude
+* Transclude function
+* Lazy render control
+* ng-repat using Structural Directive
