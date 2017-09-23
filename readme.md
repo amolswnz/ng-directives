@@ -7,3 +7,9 @@
 * Inherited Scopes
   * Simple Value Parameters
   * Function Parameters
+public/directives/
+
+#### Decorators Directives
+* Link function
+* Watching
+public/decorator/
