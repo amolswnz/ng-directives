@@ -17,5 +17,15 @@ public/decorator/
 
 #### Transclude
 * Transclude function
-* Lazy render control
+* Lazy render control<br>
+public/tranclusions/<br>
+public/tranclusions2/<br>
+public/tranclusions3/
 * ng-repat using Structural Directive
+public/structuraldir/
+
+#### Controllers and Nested Directives
+* Controllers in nested directives
+public/controller
+
+#### Directives and Services
