@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ng-directive</title>
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+ </head>
+<body ng-app="mainApp">
+    <div class="container-fluid" ng-controller='mainCtrl'>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>AngularJS - Directive in Depth</h1>
+            </div>
+        </div>
+    <hr>
+      <h4>All User info cards</h4>
+      <droid-info-card droid='droid1'> </droid-info-card>
+      <user-info-card user='user1'> </user-info-card>
+      <user-info-card user='user2' collapsed='true'> </user-info-card>
+
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                &copy; 2016 - <a href="https://www.amol.co.nz" target="_blank">Amol Wankhede</a>
+            </div>
+        </div>
+    </div>
+<script src="../../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="../../bower_components/angular/angular.min.js" charset="utf-8"></script>
+<script src="app/app.js" charset="utf-8"></script>
+<!-- <script src="../../bower_components/angular-route/angular-route.min.js" charset="utf-8"></script> -->
+</body>
+</html>
